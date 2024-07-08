@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Customer Survey Form</title>
+    <link rel="stylesheet" href="styles2.css" />
+  </head>
+  <body>
+    <main class="main">
+      <h2>Customer Survey Form</h2>
+      <div class="form-container">
+        <div class="container">
+          <form id="surveyForm">
+            <div class="name_wrapper">
+              <div class="name_email">
+                <label for="Name">Name:</label>
+                <input type="text" id="Name" name="Name" required />
+              </div>
+
+              <div class="name_email">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required />
+              </div>
+            </div>
+
+            <div class="radio_btn">
+              Is this first time, You are using our Products & Service
+              <div class="wrapper">
+                <p class="radio">
+                  <input type="radio" checked />
+                  <label>Yes</label>
+                </p>
+                <p class="radio">
+                  <input type="radio" />
+                  <label>No</label>
+                </p>
+              </div>
+            </div>
+            <div class="radio_btn">
+              Would you suggestion to your friends and colleague ?
+              <div class="wrapper">
+                <p class="radio">
+                  <input type="radio" checked />
+                  <label>Yes</label>
+                </p>
+                <p class="radio">
+                  <input type="radio" />
+                  <label>No</label>
+                </p>
+              </div>
+            </div>
+            <div class="radio_btn">
+              How Satisfied are you with our company overall ?
+              <div class="wrapper">
+                <p class="radio">
+                  <input type="radio" checked />
+                  <label>Satisfied</label>
+                </p>
+                <p class="radio">
+                  <input type="radio" />
+                  <label>Undecided</label>
+                </p>
+                <p class="radio">
+                  <input type="radio" />
+                  <label>UnSatisfied</label>
+                </p>
+              </div>
+            </div>
+
+            <p class="textarea_label">Do you have suggestion to improve our service?</p>
+            <textarea name="text" id="textarea" rows="8"></textarea>
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <!-- Popup -->
+    <div id="popup" class="popup">
+      <div class="popup-content">
+        <span id="popup-close" class="popup-close">&times;</span>
+        <h3>Submitted Information</h3>
+        <div id="popup-details"></div>
+      </div>
+    </div>
+
+    <script src="script2.js"></script>
+  </body>
+</html>
